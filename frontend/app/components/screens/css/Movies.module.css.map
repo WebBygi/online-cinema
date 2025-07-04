@@ -1,0 +1,1 @@
+{"version":3,"sources":["../movies/Movies.module.scss","Movies.module.css"],"names":[],"mappings":"AAAA;EACE,eAAA;ACCF","file":"Movies.module.css","sourcesContent":[".movies {\n  padding: 2rem 0;\n} ",".movies {\n  padding: 2rem 0;\n}"]}

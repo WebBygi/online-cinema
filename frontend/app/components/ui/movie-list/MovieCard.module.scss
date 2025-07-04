@@ -1,0 +1,70 @@
+@import 'variables.scss';
+
+.movieCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: fade .4s ease-in-out;
+}
+
+.image {
+  filter: brightness(0.5);
+}
+
+.poster {
+  border-radius: var(--layout-radius);
+  position: relative;
+  margin-bottom: 1rem;
+  transition: brightness .4s ease-in-out;
+}
+
+.title {
+  color: $white;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.genres {
+  font-size: 0.875rem;
+  color: #D1D5DB;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: $primary;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(#fff, 0.7);
+} 

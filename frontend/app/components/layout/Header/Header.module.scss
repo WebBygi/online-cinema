@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--layout-padding);
+  padding-right: var(--layout-padding);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: $black;
+  border-bottom: 1px solid $gray;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $primary;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    > a {
+      transition: color 0.2s;
+      color: $white;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+} 

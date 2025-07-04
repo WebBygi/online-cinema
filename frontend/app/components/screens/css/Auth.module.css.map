@@ -1,0 +1,1 @@
+{"version":3,"sources":["../auth/Auth.module.scss","Auth.module.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;ACCF","file":"Auth.module.css","sourcesContent":[".auth {\n  /* Auth page styles */\n} ",".auth {\n  /* Auth page styles */\n}"]}

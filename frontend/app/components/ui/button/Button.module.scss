@@ -1,0 +1,112 @@
+@import 'variables.scss';
+
+.button {
+  padding: 2.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+
+  &.primary {
+    background-color: $primary;
+    color: #ffffff;
+
+    &:hover {
+      background-color: rgba($primary, 0.8);
+    }
+  }
+
+  &.secondary {
+    background-color: $black-lighter;
+    color: #ffffff;
+
+    &:hover {
+      background-color: rgba($black-lighter, 0.8);
+    }
+  }
+
+  &.white {
+    background-color: #ffffff;
+    color: $primary;
+
+    &:hover {
+      background-color: #F3F4F6;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    color: #ffffff;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &.small {
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  &.medium {
+    padding: 0.5rem 1.5rem;
+  }
+
+  &.large {
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Variants
+.primary {
+  background: $primary;
+  color: $white;
+
+  &:hover:not(:disabled) {
+    background: rgba($primary, 0.8);
+  }
+}
+
+.secondary {
+  background: $black-lighter;
+  color: $white;
+
+  &:hover:not(:disabled) {
+    background: rgba($black-lighter, 0.8);
+  }
+}
+
+.outlined {
+  border: 2px solid $primary;
+  color: $primary;
+
+  &:hover:not(:disabled) {
+    background: rgba($primary, 0.1);
+  }
+}
+
+// Sizes
+.sm {
+  padding: $spacing-xs $spacing-sm;
+  font-size: $small-size;
+}
+
+.md {
+  padding: $spacing-sm $spacing-md;
+  font-size: $body-size;
+}
+
+.lg {
+  padding: $spacing-md $spacing-lg;
+  font-size: $h4-size;
+}
+
+.fullWidth {
+  width: 100%;
+}
